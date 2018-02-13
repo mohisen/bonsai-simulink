@@ -1,0 +1,10 @@
+/.brains
+/.widths
+/__pycache__
+/bonsai_block.c~
+/bonsai_block.pyc
+/bonsai_brain.bproj
+/simulink_cartpole_continuous
+/simulink_cartpole_continuous.slx.autosave
+/simulink_cartpole_continuous_grt_rtw
+/slprj

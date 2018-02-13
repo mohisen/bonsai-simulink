@@ -2,11 +2,12 @@
 # Running
 
 Run the following in the current directory:
-    bonsai create
+
+    bonsai create simulink-househeat
     bonsai push
     bonsai train start
 
-    ../../coordinator/coordinator
+    ../../coordinator/coordinator --brain=simulink-househeat
 
 # Files
 

@@ -14,4 +14,4 @@ Run the following in the current directory:
 * `bonsai_model.py` - model interface description
 * `simulink_househeat.ink` - inkling file
 * `simulink_househeat.slx` - Simulink model
-* `preload.m` - used when preloading the model in Simulink, to set up the Bonsai coordinator paths
+* `preload.m` - used as a preload function in the Simulink model, to set up the Bonsai coordinator paths

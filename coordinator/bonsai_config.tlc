@@ -1,0 +1,13 @@
+%implements "bonsai_config" "C"
+
+
+%function BlockTypeSetup(block, system) void
+  %<LibCacheFunctionPrototype("extern void bonsai_init(int_T numConfigs, real_T *xC);")>
+  %<LibAddToModelSources("bonsai_config")>
+%endfunction
+
+%function Outputs(block, system) Output
+  %assign wo = LibBlockOutputSignalWidth(0)
+  %assign pxo = LibBlockOutputSignalAddr(0, "", "", 0)
+  bonsai_init(%<wo>, %<pxo>);
+%endfunction

@@ -1,0 +1,15 @@
+%implements "bonsai_block" "C"
+
+
+%function BlockTypeSetup(block, system) void
+  %<LibCacheFunctionPrototype("extern void bonsai_step(int_T numInputs,  real_T *xI, int_T numOutputs,  real_T *xO);")>
+  %<LibAddToModelSources("bonsai_block")>
+%endfunction
+
+%function Outputs(block, system) Output
+  %assign wi = LibBlockInputSignalWidth(0)
+  %assign pxi = LibBlockInputSignalAddr(0, "", "", 0)
+  %assign wo = LibBlockOutputSignalWidth(0)
+  %assign pxo = LibBlockOutputSignalAddr(0, "", "", 0)
+  bonsai_step(%<wi>, %<pxi>, %<wo>, %<pxo>);
+%endfunction

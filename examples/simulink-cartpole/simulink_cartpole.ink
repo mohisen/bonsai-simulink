@@ -7,7 +7,7 @@ schema CartpoleState
 end
 
 schema CartpoleAction
-    Float32 f
+    Float32 {-10.0:10.0} f
 end
 
 schema CartpoleConfig
@@ -19,7 +19,7 @@ concept balance is estimator
    follows input(CartpoleState)
    feeds output
     experimental
-        algorithm => "TRPO" : "TRPO"
+        algorithm_ => "TRPO" : "TRPO"
     end
 end
 

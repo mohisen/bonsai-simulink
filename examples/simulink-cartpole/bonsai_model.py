@@ -70,7 +70,6 @@ class Model:
         """
         outlist = []
         if act is not None:
-            act['f'] *= 10.0
             self.action = act
             outlist = [ act['f'], ]
 

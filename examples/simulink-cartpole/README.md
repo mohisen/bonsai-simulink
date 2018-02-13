@@ -13,6 +13,6 @@ Run the following in the current directory:
 
 * `README.md` - this file
 * `bonsai_model.py` - model interface description
-* `simulink_cartpole_continuous.ink` - inkling file
-* `simulink_cartpole_continuous.slx` - Simulink model
+* `simulink_cartpole.ink` - inkling file
+* `simulink_cartpole.slx` - Simulink model
 * `preload.m` - used as a preload function in the Simulink model, to set up the Bonsai coordinator paths

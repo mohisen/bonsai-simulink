@@ -10,13 +10,13 @@ class Model:
         """
         Load the specified simulink model
         """
-        eng.eval("load_system('simulink_cartpole_continuous')", nargout=0)
+        eng.eval("load_system('simulink_cartpole')", nargout=0)
 
     def executable_name(self):
         """
         Returns the name of the executable (Simulink Coder Only)
         """
-        return "./simulink_cartpole_continuous"
+        return "./simulink_cartpole"
 
     def episode_init(self):
         self.nsteps = 0

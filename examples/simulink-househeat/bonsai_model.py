@@ -8,13 +8,13 @@ class Model:
         """
         Load the specified simulink model
         """
-        eng.eval("load_system('sldemo_househeat_bonsai')", nargout=0)
+        eng.eval("load_system('simulink_househeat')", nargout=0)
 
     def executable_name(self):
         """
         Returns the name of the executable (Simulink Coder Only)
         """
-        return "./sldemo_househeat_bonsai"
+        return "./simulink_househeat"
 
     def episode_init(self):
         self.nsteps = 0

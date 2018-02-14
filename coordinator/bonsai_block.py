@@ -3,6 +3,7 @@ import json
 
 g_id = 0
 config_cache = None
+session = requests.Session()
 
 def init(port):
     """Handshake with the coordinator, return config"""
@@ -15,7 +16,7 @@ def init(port):
         'id': g_id,
     }
     url = "http://localhost:%d/" % (port,)
-    response = requests.post(url, data=json.dumps(req))
+    response = session.post(url, data=json.dumps(req))
     rsp = response.json()
     config = rsp['result']['config']
     return config
@@ -44,7 +45,7 @@ def step(port, state):
         'id': g_id,
     }
     url = "http://localhost:%d/" % (port,)
-    response = requests.post(url, data=json.dumps(req))
+    response = session.post(url, data=json.dumps(req))
     rsp = response.json()
     action = rsp['result']['action']
     return action

@@ -13,21 +13,21 @@ You may want to do the following steps within a virtual environment if you don't
 
 Run the following in the current directory:
 
-    `bonsai create simulink-househeat`
-    `bonsai push`
-    `bonsai train start`
+    bonsai create simulink-househeat
+    bonsai push
+    bonsai train start
 
-    `./coordinator.py --brain=simulink-househeat`
+    ./coordinator.py --brain=simulink-househeat
 
 When you are done (you may need to Ctrl+C to stop in the terminal):
 
-    `bonsai train stop`
+    bonsai train stop
 
 # Predicting with a BRAIN
 
 Once you have hit sufficient training you can predict with the BRAIN you have finished training.
 
-    `./coordinator.py --predict`
+    ./coordinator.py --predict
 
 # Model Specific Files
 

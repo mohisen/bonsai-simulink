@@ -6,8 +6,9 @@ This is an example of using Bonsai's Universal Coordinator in Python to connect 
 
 You may want to do the following steps within a virtual environment if you don't want to make changes to your current Python packages.
 
-1. pip install aiohttp
-2. Install the Python Matlab Engine by [following these instructions](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html)
+1. pip install bonsai-cli bonsai-ai
+2. pip install aiohttp
+3. Install the Python Matlab Engine by [following these instructions](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html)
 
 # Training a BRAIN
 

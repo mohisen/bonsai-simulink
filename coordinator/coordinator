@@ -23,7 +23,7 @@ sys.path.append('.')
 from bonsai_model import Model
 
 _debug = False
-_use_coder = True
+_use_coder = False
 _brainport = None
 _model = Model()
 _config = DataSync("config")

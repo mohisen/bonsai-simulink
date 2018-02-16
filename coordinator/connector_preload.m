@@ -1,5 +1,4 @@
-pythonpath = getenv('PYTHONPATH');
-if not(size(regexp(pythonpath, ':../../coordinator$'), 1))
-    disp('Adding ../../coordinator to PYTHONPATH');
-    setenv('PYTHONPATH', [pythonpath ':../../coordinator'])
+P = py.sys.path;
+if count(P, '../../coordinator') == 0
+    insert(P, int32(0), '../../coordinator');
 end

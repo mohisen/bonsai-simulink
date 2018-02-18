@@ -4,6 +4,12 @@
 
 ### CLI INSTALLATION
 1. We strongly recommend to create a virtual environment using virtualenv (https://virtualenv.pypa.io/en/stable/installation/)
+    ```
+    pip install virtualenv
+    virtualenv bonsai
+    source bonsai/bin/activate
+    ```
+
 2. Install the Bonsai CLI by following our [detailed CLI installation guide](http://docs.bons.ai/guides/cli-guide.html).
 
     ```

@@ -22,7 +22,7 @@ We strongly recommend to create a virtual environment using [virtualenv](https:/
 ## CLI INSTALLATION
 
 
-Install the Bonsai CLI by following our [detailed CLI installation guide](http://docs.bons.ai/guides/cli-guide.html).
+Install the Bonsai CLI and read our [detailed CLI installation guide](http://docs.bons.ai/guides/cli-guide.html).
 
     
     pip install bonsai-cli bonsai-ai

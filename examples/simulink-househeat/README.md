@@ -1,6 +1,6 @@
 # Simulink Househeat Example
 
-This is a step-by-step guide for training the Simulink Househeat model to let the Bonsai BRAIN control the thermostat.
+This is a step-by-step guide for training a Bonsai BRAIN using the Simulink Househeat model. 
 
 ## LOCAL (CLI) GUIDE
 

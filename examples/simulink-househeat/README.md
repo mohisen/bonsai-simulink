@@ -1,6 +1,6 @@
 # Simulink Househeat Example
 
-This is a step-by-step guide for training a Bonsai BRAIN using the Simulink Househeat model. You have to have Matlab and Simulink installed. Trial versions can be downloaded from [TheMathworks](http://www.themathworks.com]
+This is a step-by-step guide for training a Bonsai BRAIN using the Simulink Househeat model. You have to have Matlab and Simulink installed. Trial versions can be downloaded from [TheMathworks](http://www.themathworks.com)
 
 ## LOCAL (CLI) GUIDE
 

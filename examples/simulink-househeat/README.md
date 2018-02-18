@@ -29,7 +29,7 @@ Install Asynchronous HTTP Client/Server
     python setup.py install
     
 
-# Running
+# Running and Training
 
 Run the following in the simulink-househeat directory:
 
@@ -38,6 +38,10 @@ Run the following in the simulink-househeat directory:
     bonsai train start
 
     ../../coordinator/coordinator --brain=simulink-househeat
+
+# Predictions
+
+    ../../coordinator/coordinator --predict
 
 # Files
 

@@ -34,6 +34,9 @@ class Model:
         Called with a dictionary of config from ther brain
         convert to a list of config constants for the simulation.
         """
+        if len(conf) == 0:
+            # In prediction mode the brain doesn't supply config.
+            conf['dummy'] = -1.0
         return [ conf['dummy'], ]
 
     def convert_input(self, inlist):

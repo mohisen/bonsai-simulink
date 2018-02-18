@@ -11,21 +11,21 @@ Install Asynchronous HTTP Client/Server
     pip install aiohttp
 
 We strongly recommend to create a virtual environment using [virtualenv] https://virtualenv.pypa.io/en/stable/installation/)
-    ```
+
     pip install virtualenv
     virtualenv bonsai
     source bonsai/bin/activate
-    ```
+    
 
 ### CLI INSTALLATION
 
 
-2. Install the Bonsai CLI by following our [detailed CLI installation guide](http://docs.bons.ai/guides/cli-guide.html).
+Install the Bonsai CLI by following our [detailed CLI installation guide](http://docs.bons.ai/guides/cli-guide.html).
 
-    ```
-    pip install bonsai-cli bonsai-ai
-    ```
     
+    pip install bonsai-cli bonsai-ai
+    
+  
 # Install Matlab Engine: 
 
     

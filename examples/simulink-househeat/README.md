@@ -2,9 +2,9 @@
 
 This is a step-by-step guide for training a Bonsai BRAIN using the Simulink Househeat model. You have to have Matlab and Simulink installed. Trial versions can be downloaded from [TheMathworks](http://www.themathworks.com]
 
-## LOCAL (CLI) GUIDE
+# LOCAL (CLI) GUIDE
 
-# Pre-requisites to run the example
+## Pre-requisites to run the example
 
 Install Asynchronous HTTP Client/Server
     
@@ -17,7 +17,7 @@ We strongly recommend to create a virtual environment using [virtualenv] https:/
     source bonsai/bin/activate
     
 
-### CLI INSTALLATION
+## CLI INSTALLATION
 
 
 Install the Bonsai CLI by following our [detailed CLI installation guide](http://docs.bons.ai/guides/cli-guide.html).
@@ -26,14 +26,14 @@ Install the Bonsai CLI by following our [detailed CLI installation guide](http:/
     pip install bonsai-cli bonsai-ai
     
   
-# Install Matlab Engine: 
+## Install Matlab Engine: 
 
     
     cd <matlabroot>/extern/engines/python
     python setup.py install
     
 
-# Running and Training
+## Running and Training
 
 Run the following in the simulink-househeat directory:
 
@@ -43,11 +43,11 @@ Run the following in the simulink-househeat directory:
 
     ../../coordinator/coordinator --brain=simulink-househeat
 
-# Predictions
+## Predictions
 
     ../../coordinator/coordinator --predict
 
-# Files
+## Files
 
 * `README.md` - this file
 * `bonsai_model.py` - model interface description

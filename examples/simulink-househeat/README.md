@@ -1,7 +1,31 @@
+# Simulink Househeat Sample
+
+## LOCAL (CLI) GUIDE
+
+### CLI INSTALLATION
+1. We strongly recommend to create a virtual environment using virtualenv (https://virtualenv.pypa.io/en/stable/installation/)
+2. Install the Bonsai CLI by following our [detailed CLI installation guide](http://docs.bons.ai/guides/cli-guide.html).
+
+    ```
+    pip install bonsai-cli bonsai-ai
+    ```
+
+# Install pre-requisites
+
+Install Asynchronous HTTP Client/Server
+    ```
+    pip install aiohttp
+    ```
+#Install Matlab Engine: 
+
+    ```
+    cd <matlabroot>/extern/engines/python
+    python setup.py install
+    ```
 
 # Running
 
-Run the following in the current directory:
+Run the following in the simulink-househeat directory:
 
     bonsai create simulink-househeat
     bonsai push

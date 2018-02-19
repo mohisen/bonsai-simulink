@@ -11,9 +11,6 @@ import argparse
 
 from aiohttp import web
 
-# FIXME - not needed if using coder variation
-import matlab.engine
-
 from bonsai_ai import Simulator, Brain, Config
 
 from datasync import DataSync
@@ -251,6 +248,10 @@ if __name__ == "__main__":
     (opts, unknown_args) = parser.parse_known_args(sys.argv)
     _use_coder = opts.coder
 
+    # If we aren't using coder, import the matlab engine
+    if not _use_coder:
+        import matlab.engine
+    
     # Start a thread to initiate the simulation
     bonsai_thread = threading.Thread(target=_run_bonsai, args=(unknown_args,))
     bonsai_thread.daemon = True

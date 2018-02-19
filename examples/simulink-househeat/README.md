@@ -1,6 +1,6 @@
 # Simulink Househeat Example
 
-This is a step-by-step guide for using Bonsai's Universal Coordinator in Python to connect the Bonsai Platform to a Simulink model.
+This is a step-by-step guide for using Bonsai's Universal Python Coordinator to connect the Bonsai Platform to a Simulink model.
 
 You have to have Matlab and Simulink installed. Trial versions can be downloaded from [TheMathworks](http://www.themathworks.com)
 
@@ -23,7 +23,7 @@ Install Asynchronous HTTP Client/Server
 
 Install the Bonsai CLI and read our [detailed CLI installation guide](http://docs.bons.ai/guides/cli-guide.html).
 
-    pip install bonsai-cli bonsai-ai
+    pip install bonsai-cli bonsai-ai bonsai-gym
 
 
 ## Install Matlab Engine:
@@ -59,5 +59,4 @@ Now you can predict using the trained BRAIN.
 * `simulink_househeat.ink` - Inkling file
 * `simulink_househeat.slx` - Simulink model
 * `sldemo_househeat_data.m` - Simulink model data
-* `preload.m` - used as a preload function in the Simulink model, to
-  set up the Bonsai coordinator paths
+* `preload.m` - used as a preload function in the Simulink model, to set up the Bonsai coordinator paths

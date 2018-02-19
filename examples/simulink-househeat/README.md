@@ -53,7 +53,7 @@ Run the following in the simulink-househeat directory:
 
 ## Predictions
 
-    ../../coordinator/coordinator --brain=simulink-househeat --predict
+    ../../coordinator/coordinator --predict
 
 ## Files
 

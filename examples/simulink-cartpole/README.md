@@ -33,7 +33,7 @@ When you are done (you may need to Ctrl+C to stop in the terminal):
 Once you have hit sufficient training you can predict with the BRAIN
 you have finished training.
 
-    ../../coordinator/coordinator --brain=simulink-cartpole --predict
+    ../../coordinator/coordinator --predict
 
 # Model Specific Files
 

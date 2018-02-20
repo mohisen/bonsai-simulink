@@ -1,6 +1,6 @@
 # Simulink Househeat Example
 
-This is a step-by-step guide for using Bonsai's Universal Python Coordinator to connect the Bonsai Platform to a Simulink model.
+This is a step-by-step guide for using Bonsai's Universal Coordinator in Python to connect the Bonsai Platform to a Simulink model.
 
 You have to have Matlab and Simulink installed. Trial versions can be downloaded from [TheMathworks](http://www.themathworks.com)
 

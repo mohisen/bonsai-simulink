@@ -9,7 +9,7 @@ You have to have Matlab and Simulink installed. Trial versions can be downloaded
 We're using the Bonsai Command Line Interface (CLI) for this example. You can always verify training progress on the web at
 http://beta.bons.ai
 
-# Pre-requisites to run the example
+# Pre-requisites to run the Example
 
 We strongly recommend to create a virtual environment using [virtualenv](https://virtualenv.pypa.io/en/stable/installation/)
 

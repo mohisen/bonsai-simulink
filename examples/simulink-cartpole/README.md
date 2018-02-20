@@ -1,37 +1,53 @@
 # Bonsai's Simulink Cartpole Example
 
-This is an example of using Bonsai's Universal Coordinator in Python
-to connect The Bonsai Platform to Simulink in MATLAB.
+This is a step-by-step guide for using Bonsai's Universal Coordinator in Python to connect the Bonsai Platform to a Simulink model.
 
-# Install Prerequisites
+You have to have Matlab and Simulink installed. Trial versions can be downloaded from [TheMathworks](http://www.themathworks.com)
 
-You may want to do the following steps within a virtual environment if
-you don't want to make changes to your current Python packages.
+# LOCAL (CLI) GUIDE
 
-    pip install bonsai-cli bonsai-ai
+We're using the Bonsai Command Line Interface (CLI) for this example. You can always verify training progress on the web at
+http://beta.bons.ai
+
+# Pre-requisites to run the example
+
+We strongly recommend to create a virtual environment using [virtualenv](https://virtualenv.pypa.io/en/stable/installation/)
+
+    pip install virtualenv
+    virtualenv bonsai
+    source bonsai/bin/activate
+
+Install Asynchronous HTTP Client/Server
+
     pip install aiohttp
 
-Install the Python Matlab Engine by [following these
-instructions](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html)
+Install the Bonsai CLI and read our [detailed CLI installation guide](http://docs.bons.ai/guides/cli-guide.html).
 
-# Training a BRAIN
+    pip install bonsai-cli bonsai-ai
 
-Run the following in the current directory:
+
+# Install Matlab Engine:
+
+    cd <matlabroot>/extern/engines/python
+    python setup.py install
+
+# Running and Training
+
+Run the following in the simulink-househeat directory:
 
     bonsai create simulink-cartpole
     bonsai push
     bonsai train start
 
     ../../coordinator/coordinator --brain=simulink-cartpole
-    
-When you are done (you may need to Ctrl+C to stop in the terminal):
 
-    bonsai train stop
+When you are seeing rewards reaching 999 you can stop training. You may need to Ctrl+C to stop in the terminal.
+
+    bonsai train stop    
 
 # Predicting with a BRAIN
 
-Once you have hit sufficient training you can predict with the BRAIN
-you have finished training.
+Now you can predict using the trained BRAIN.
 
     ../../coordinator/coordinator --predict
 

@@ -4,7 +4,7 @@ This is a step-by-step guide for using Bonsai's Universal Coordinator in Python 
 
 You have to have Matlab and Simulink installed. Trial versions can be downloaded from [TheMathworks](http://www.themathworks.com)
 
-# LOCAL (CLI) GUIDE
+# CLI guide
 
 We're using the Bonsai Command Line Interface (CLI) for this example. You can always verify training progress on the web at
 http://beta.bons.ai

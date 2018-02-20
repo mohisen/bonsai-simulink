@@ -46,3 +46,11 @@ Construct an inkling file for your model.
 
 Copy the bonsai_model.py file from one of the existing examples into
 your directory and update to refelct your model.
+
+Create a brain for your model:
+
+    bonsai create your-model
+    bonsai push
+    bonsai train start
+
+    ../../coordinator/coordinator --brain=your-model

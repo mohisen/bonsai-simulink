@@ -26,10 +26,17 @@ Install the Bonsai CLI and read our [detailed CLI installation guide](http://doc
     pip install bonsai-cli bonsai-ai
 
 
-# Install Matlab Engine:
+# Install Matlab Dependencies:
+
+Matlab Python API
 
     cd <matlabroot>/extern/engines/python
     python setup.py install
+
+Matlab Simscape Multibody Add-On
+
+    Go to your Add-On Explorer in Matlab and add Simscape and Simscape Multibody.
+
 
 # Running and Training
 

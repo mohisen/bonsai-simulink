@@ -28,7 +28,7 @@ Install the Bonsai CLI and read our [detailed CLI installation guide](http://doc
 
 # Install Matlab Dependencies:
 
-Matlab Python API
+Matlab API for Python
 
     cd <matlabroot>/extern/engines/python
     python setup.py install

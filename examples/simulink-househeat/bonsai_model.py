@@ -6,17 +6,20 @@ import math
 class Model:
     def load(self, eng):
         """
-        Load the specified simulink model
+        Load the specified simulink model.
         """
         eng.eval("load_system('simulink_househeat')", nargout=0)
 
     def executable_name(self):
         """
-        Returns the name of the executable (Simulink Coder Only)
+        Returns the name of the executable (Simulink Coder Only).
         """
         return "./simulink_househeat"
 
     def episode_init(self):
+        """
+        This method is called at the beginning of each episode.
+        """
         self.nsteps = 0
         self.action = None
         self.state = None
@@ -25,12 +28,15 @@ class Model:
         self.total_reward = 0.0
 
     def episode_step(self):
+        """
+        This method is called at the beginning of each iteration.
+        """
         self.nsteps += 1
         
     def convert_config(self, conf):
         """
-        Called with a dictionary of config from ther brain
-        convert to a list of config constants for the simulation.
+        Convert the dictionary of config from the brain into an ordered
+        list of config for the simulation.
         """
         if len(conf) == 0:
             # In prediction mode the brain doesn't supply config.
@@ -40,10 +46,11 @@ class Model:
     def convert_input(self, inlist):
         """
         Called with a list of inputs from the model,
-        returns (state, reward, terminal)
+        returns (state, reward, terminal).
         """
 
-        # First map the state list into a state dictionary.
+        # First map the ordered state list from the simulation into a
+        # state dictionary for the brain.
         self.state = {
             'heat_cost':		inlist[0],
             'set_temp':			inlist[1],
@@ -55,8 +62,6 @@ class Model:
 
         tdiff = math.fabs(self.state['set_temp'] - self.state['room_temp'])
 
-        # 5 degree ^ 0.4 = 1.9
-        # 2 degree ^ 0.4 = 1.32
         # 1 degree ^ 0.4 = 1.0
         self.reward = 1.0 - pow(tdiff, 0.4)/1.32
         
@@ -69,8 +74,8 @@ class Model:
 
     def convert_output(self, act):
         """
-        Called with a dictionary of actions, returns an ordered
-        list of outputs for the model.
+        Called with a dictionary of actions from the brain, returns an
+        ordered list of outputs for the simulation model.
         """
         outlist = []
         if act is not None:
@@ -80,6 +85,10 @@ class Model:
         return outlist
 
     def format_start(self):
+        """
+        Emit a formatted header and initial state line at the beginning
+        of each episode.
+        """
         logging.info(" itr h =>    cost  set   troom   droom tout dout = t    rwd")
         logging.info("          %7.1f %4.1f %7.1f %7.1f %4.1f %4.1f" % (
             self.state['heat_cost'],
@@ -91,6 +100,9 @@ class Model:
         ))
 
     def format_step(self):
+        """
+        Emit a formatted line for each iteration.
+        """
         if self.terminal:
             totrwdstr = " %6.3f" % self.total_reward
         else:

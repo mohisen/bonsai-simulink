@@ -23,7 +23,7 @@ Install Asynchronous HTTP Client/Server
 
 Install the Bonsai CLI and read our [detailed CLI installation guide](http://docs.bons.ai/guides/cli-guide.html).
 
-    pip install bonsai-cli bonsai-ai
+    pip install bonsai-cli bonsai-ai bonsai-gym
 
 
 # Install Matlab Dependencies:

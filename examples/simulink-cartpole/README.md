@@ -9,13 +9,17 @@ You have to have Matlab and Simulink installed. Trial versions can be downloaded
 We're using the Bonsai Command Line Interface (CLI) for this example. You can always verify training progress on the web at
 http://beta.bons.ai
 
+# Virtual Environments
+
+If you want to use a virtual environment like virtualenv, you need to validate that Matlab is using the same python version  that is active in your virutal environment.
+
+    which python
+
+Open Matlab 
+    
+    pyversion = '<PATH OF ACTIVE PYTHON IN YOUR ENVIRONMENT>'
+
 # Pre-requisites to run the Example
-
-We strongly recommend to create a virtual environment using [virtualenv](https://virtualenv.pypa.io/en/stable/installation/)
-
-    pip install virtualenv
-    virtualenv bonsai
-    source bonsai/bin/activate
 
 Install Asynchronous HTTP Client/Server
 
@@ -48,7 +52,7 @@ Run the following in the simulink-househeat directory:
 
     ../../coordinator/coordinator --brain=simulink-cartpole
 
-When you are seeing rewards reaching 999 you can stop training. You may need to Ctrl+C to stop in the terminal.
+When you are seeing rewards reaching 1000 you can stop training. You may need to Ctrl+C to stop in the terminal.
 
     bonsai train stop    
 

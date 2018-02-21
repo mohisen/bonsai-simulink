@@ -1,0 +1,8 @@
+{
+    "files": [
+        "simulink_milldemo.ink"
+    ],
+    "training": {
+        "simulator": "custom"
+    }
+}

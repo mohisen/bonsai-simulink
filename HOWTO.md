@@ -3,7 +3,7 @@
 ## Introduction
 
 This how-to describes steps needed to connect your own Simulink model
-to the Bonsai platform. It follows the same approach we took within the
+to the Bonsai platform. It follows the same approach we took for the other 
 examples.
 
 ## Step by Step Guide

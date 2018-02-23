@@ -60,7 +60,8 @@ class Model:
             'delta_y':		inlist[3],
         }
 
-        self.reward = 1.0 - pow(abs(self.state['delta_x']) + abs(self.state['delta_y']), 0.4)/0.4
+        # 0.01 ^ 0.4 = .158
+        self.reward = 1.0 - pow(abs(self.state['delta_x']) + abs(self.state['delta_y']), 0.4)/0.158
 
         self.terminal = self.reward < 0.0 or self.nsteps >= _STEPLIMIT
 

@@ -2,15 +2,15 @@
 
 Simulink, developed by MathWorks, is a graphical programming environment for modeling, simulating and analyzing multi-domain dynamical systems. Bonsai is using Simulink as a training environment for a Bonsai BRAIN. We’re supporting a wide range of use cases that can be described as control or machine tuning problems. Please review our simulator and sim model requirements guide at <URL>.
 
-# Simulink Bonsai Examples
+## Simulink Bonsai Examples
 
-## Cartpole
+### Cartpole
 
 The model is based on an inverted pendulum attached to a cart. The objective is to move the cart in way that stabilizes the pendulum.
 
 Original model URL: (https://www.mathworks.com/help/control/examples/control-of-an-inverted-pendulum-on-a-cart.html)
 
-## Househeat
+### Househeat
 
 This example shows how to use Simulink to create the thermal model of a house. This system models the outdoor environment, the thermal characteristics of the house, and the house heating system. Objective for the Bonsai AI is to reach the desired temperature.
 
@@ -18,7 +18,7 @@ Original model URL: (https://www.mathworks.com/help/simulink/examples/thermal-mo
 
 Both examples are located in the examples folder including detailed step-by-step instructions.
 
-# Prerequisites
+## Prerequisites
 
 - Bonsai CLI and SDK
 - Python3
@@ -31,7 +31,7 @@ Both examples are located in the examples folder including detailed step-by-step
 # Download directly or git clone
 git clone https://github.com/BonsaiAI/bonsai-simulink
 ```
-# Clone the Project
+## Clone the Project
 
 Clone the simulation project with `git clone`. You can also download a .zip of the files directly from GitHub. For this guide we'll be walking you through the Househeat Simulink demo, one of the supported Bonsai simulation models.
 
@@ -45,11 +45,11 @@ Finally, Simulink Coder executable models can be easily shared with people and t
 
 More information in Matlab and Simulink Coder: https://www.mathworks.com/products/simulink-coder.html
 
-# How to connect your own model
+## How to connect your own model
 
 Please review the HOWTO file for additional information on how to connect your own Simulink model to the Bonsai AI platform.
 
-# Virtual Environments (optional)
+## Virtual Environments (optional)
 
 If you want to use a virtual environment like virtualenv, you need to validate that Matlab is using the same python version that is active in your virutal environment.
 

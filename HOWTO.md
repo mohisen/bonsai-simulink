@@ -4,6 +4,14 @@
 
 This how-to describes steps needed to connect your own Simulink model to the Bonsai platform. It follows the same approach we took for the other examples.
 
+## Deconstruct your problem
+
+Before starting to modify your Simulink model and start writing Inkling code, it's recommended to think about answers to:
+1) What is the exact problem I'm trying to solve and what does success look like? This will help to define your reward function.
+2) What are the actions that impact the state and which are the ones I want to have controlled by the Bonsai AI?
+3) What is the state of my simulation?
+4) What is a terminal condition in my model? This could be something as simple as a something being out of bound.
+
 ## Step by Step Guide
 
 Create a new directory in the examples subdirectory. Copy your own Simulink slx file into this directory.
@@ -36,9 +44,9 @@ Insert a bonsai_config block in your model:
 
 SPECIAL NOTE: If you are using a dummy config value you should connect it to an input on the bonsai_block. This ensures that the bonsai_config block is correctly evaluated before the bonsai_block.
 
-## Deconstruct your problem
-
 ## State, actions, terminal and reward
+
+Based on the ansers to the initial questions, make sure that your Inkling code uses the exact same variable names as you're using in the bonsai_model.py file. Have a look at our examples!
 
 Construct an inkling file for your model.
 - Inkling guide at http://docs.bons.ai/guides/inkling-guide.html

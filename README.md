@@ -6,7 +6,7 @@ Simulink, developed by MathWorks, is a graphical programming environment for mod
 
 ### Cartpole
 
-The model is based on an inverted pendulum attached to a cart. The objective is to move the cart in way that stabilizes the pendulum.
+The model is based on an inverted pendulum attached to a cart. The objective is to move the cart in a way that stabilizes the pendulum.
 
 Original model URL: (https://www.mathworks.com/help/control/examples/control-of-an-inverted-pendulum-on-a-cart.html)
 

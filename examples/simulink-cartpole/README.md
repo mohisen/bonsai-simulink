@@ -17,7 +17,7 @@ If you want to use a virtual environment like virtualenv, you need to validate t
 
 Open Matlab 
     
-    pyversion = '<PATH OF ACTIVE PYTHON IN YOUR ENVIRONMENT>'
+    pyversion '<PATH OF ACTIVE PYTHON IN YOUR ENVIRONMENT>'
 
 # Pre-requisites to run the Example
 

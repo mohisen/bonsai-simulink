@@ -60,10 +60,28 @@ class Model:
             'outside_temp_change':	inlist[5],
         }
 
+        # To compute the reward function value we start by taking the
+        # difference between the set point temperature and the actual
+        # room temperature.
         tdiff = math.fabs(self.state['set_temp'] - self.state['room_temp'])
 
-        # 1 degree ^ 0.4 = 1.0
-        self.reward = 1.0 - pow(tdiff, 0.4)/1.32
+        # Raise the difference to the 0.4 power.  The non-linear
+        # function enhances the reward distribution near the desired
+        # temperature range.  Please refer to the Bonsai training
+        # video on reward functions for more details.
+        nonlinear_diff = pow(tdiff, 0.4)
+
+        # Scale the nonlinear difference so differences in the range
+        # +/- 2 degrees (C) map between 0 and 1.0.
+        # 2 degree ^ 0.4 = 1.32
+        scaled_diff = nonlinear_diff / 1.32
+
+        # Since we need a positive going reward function, subtract the
+        # scaled difference from 1.0.  This reward value will be 1.0
+        # when we are precisely matching the set point and will fall
+        # to less than 0.0 when we exceed 2 degrees (C) from the set
+        # point.
+        self.reward = 1.0 - scaled_diff
         
         self.terminal = self.nsteps >= 240 or self.reward < 0.0
 

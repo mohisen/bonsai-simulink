@@ -1,20 +1,20 @@
 # Simulink Overview
 
-Simulink, developed by MathWorks, is a graphical programming environment for modeling, simulating and analyzing multi-domain dynamical systems. 
-Bonsai is using Simulink as a training environment for a Bonsai BRAIN. We’re supporting a wide range of use cases that can be described as control 
-or machine tuning problems. Please review our simulator and sim model requirements guide at <URL>.
+Simulink, developed by MathWorks, is a graphical programming environment for modeling, simulating and analyzing multi-domain dynamical systems. Bonsai is using Simulink as a training environment for a Bonsai BRAIN. We’re supporting a wide range of use cases that can be described as control or machine tuning problems. Please review our simulator and sim model requirements guide at <URL>.
 
 # Simulink Bonsai Examples
 
-# Cartpole 
+## Cartpole
 
-The model is based on an inverted pendulum attached to a cart. The objective is to move the cart in way that stabilizes the pendulum. 
+The model is based on an inverted pendulum attached to a cart. The objective is to move the cart in way that stabilizes the pendulum.
+
 Original model URL: (https://www.mathworks.com/help/control/examples/control-of-an-inverted-pendulum-on-a-cart.html)
 
-# Househeat
+## Househeat
 
-This example shows how to use Simulink to create the thermal model of a house. This system models the outdoor environment, the thermal 
-characteristics of the house, and the house heating system. Objective for the Bonsai AI is to reach the desired temperature.
+This example shows how to use Simulink to create the thermal model of a house. This system models the outdoor environment, the thermal characteristics of the house, and the house heating system. Objective for the Bonsai AI is to reach the desired temperature.
+
+Original model URL: (https://www.mathworks.com/help/simulink/examples/thermal-model-of-a-house.html)
 
 Both examples are located in the examples folder including detailed step-by-step instructions.
 
@@ -31,6 +31,7 @@ Both examples are located in the examples folder including detailed step-by-step
 # Download directly or git clone
 git clone https://github.com/BonsaiAI/bonsai-simulink
 ```
+# Clone the Project
 
 Clone the simulation project with `git clone`. You can also download a .zip of the files directly from GitHub. For this guide we'll be walking you through the Househeat Simulink demo, one of the supported Bonsai simulation models.
 
@@ -57,5 +58,3 @@ If you want to use a virtual environment like virtualenv, you need to validate t
 Open Matlab
 
     pyversion = '<PATH OF ACTIVE PYTHON IN YOUR ENVIRONMENT>'
-
-# Clone the Project

@@ -9,16 +9,6 @@ You have to have Matlab and Simulink installed. Trial versions can be downloaded
 We're using the Bonsai Command Line Interface (CLI) for this example. You can always verify training progress on the web at
 http://beta.bons.ai
 
-# Virtual Environments
-
-If you want to use a virtual environment like virtualenv, you need to validate that Matlab is using the same python version  that is active in your virutal environment.
-
-    which python
-
-Open Matlab 
-    
-    pyversion '<PATH OF ACTIVE PYTHON IN YOUR ENVIRONMENT>'
-
 # Pre-requisites to run the Example
 
 Install Asynchronous HTTP Client/Server

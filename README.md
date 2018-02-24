@@ -55,8 +55,12 @@ Python virtual environments isolate Python libraries installed for a specific pr
 
 Linux & macOS instructions
 
-    which python 
+    which python3 
+
+Microsoft Windows
+    
+    where python
 
 Open Matlab
 
-    pyversion = '<PATH OF ACTIVE PYTHON IN YOUR ENVIRONMENT>'
+    pyversion = '<PATH OF ACTIVE PYTHON3 FROM YOUR ENVIRONMENT>'

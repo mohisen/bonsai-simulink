@@ -26,14 +26,14 @@ Both examples are located in the examples folder including detailed step-by-step
 - MATLAB Engine API for Python
 - MATLAB & Simulink (R2017)
 
+## Clone the Project
+
+Clone the simulation project with `git clone`. You can also download a .zip of the files directly from GitHub. 
 
 ```
 # Download directly or git clone
 git clone https://github.com/BonsaiAI/bonsai-simulink
 ```
-## Clone the Project
-
-Clone the simulation project with `git clone`. You can also download a .zip of the files directly from GitHub. For this guide we'll be walking you through the Househeat Simulink demo, one of the supported Bonsai simulation models.
 
 
 ## Using Simulink Coder for Parallel Simulations

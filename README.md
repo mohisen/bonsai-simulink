@@ -20,10 +20,10 @@ Both examples are located in the examples folder including detailed step-by-step
 
 ## Prerequisites
 
-- Bonsai CLI and SDK
 - Python3
-- Asynchronous HTTP Client/Server
-- MATLAB Engine API for Python
+- Bonsai CLI and SDK (Installation covered in separate README)
+- Asynchronous HTTP Client/Server (Installation covered in separate README)
+- MATLAB Engine API for Python (Installation covered in separate README)
 - MATLAB & Simulink (R2017)
 
 ## Clone the Project

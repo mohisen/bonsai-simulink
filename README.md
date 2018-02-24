@@ -24,7 +24,7 @@ Both examples are located in the examples folder including detailed step-by-step
 - Python3
 - Asynchronous HTTP Client/Server
 - MATLAB Engine API for Python
-- Matlab & Simulink
+- MATLAB & Simulink (R2017)
 
 
 ```

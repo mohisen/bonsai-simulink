@@ -51,9 +51,11 @@ Please review the HOWTO file for additional information on how to connect your o
 
 ## Virtual Environments (optional)
 
-If you want to use a virtual environment like virtualenv, you need to validate that Matlab is using the same python version that is active in your virutal environment.
+Python virtual environments isolate Python libraries installed for a specific project from your system-wide Python installation. Virtual environments are useful if you frequently work with a variety of Python programs. If you want to use a virtual environment like virtualenv with Simulink, you need to validate that Matlab is using the same Python that is active in your virtual environment.
 
-    which python
+Linux & macOS instructions
+
+    which python 
 
 Open Matlab
 

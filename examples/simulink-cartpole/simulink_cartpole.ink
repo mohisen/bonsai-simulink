@@ -18,9 +18,6 @@ concept balance is estimator
    predicts (CartpoleAction)
    follows input(CartpoleState)
    feeds output
-    experimental
-        algorithm_ => "TRPO" : "TRPO"
-    end
 end
 
 simulator simulink_sim(CartpoleConfig)

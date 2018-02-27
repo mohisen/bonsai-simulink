@@ -1,6 +1,6 @@
 # Simulink Overview
 
-Simulink, developed by The MathWorks, is a graphical programming environment for modeling, simulating and analyzing multi-domain dynamical systems. Bonsai is using Simulink as a training environment for a Bonsai BRAIN. We’re supporting a wide range of use cases that can be described as control or machine tuning problems. Please review our simulator and sim model requirements guide at INSERT URL.
+Simulink, developed by The MathWorks, is a graphical programming environment for modeling, simulating and analyzing multi-domain dynamical systems. Bonsai is using Simulink as a training environment for a Bonsai BRAIN. We’re supporting a wide range of use cases that can be described as control or machine tuning problems. Please review our simulator and [**simulation model requirements guide**](http://docs.bons.ai//guides/simulation-guide.html).
 
 ## Simulink Bonsai Examples
 
@@ -35,11 +35,10 @@ Clone the simulation project with `git clone`. You can also download a .zip of t
 git clone https://github.com/BonsaiAI/bonsai-simulink
 ```
 
-
 ## Using Simulink Coder for Parallel Simulations
 
 Simulink Coder provides a mechanism to compile many Simulink models as a fast running C executable file for your operating system. There are three main benefits to training Bonsai BRAINs with these executables.
-First is that Simulink Coder executables are return simulations results much faster than raw Simulink files. When training a BRAIN using Deep Reinforcement Learning, this difference in speed can add up. For example, if you train a BRAIN for 1M iterations with a Simulink Coder executable that runs in 0.5s per iteration instead of 1.5s per iteration, your total training time will decrease by 277 hours!
+First is that Simulink Coder executables return simulations results much faster than raw Simulink files. When training a BRAIN using Deep Reinforcement Learning, this difference in speed can add up. For example, if you train a BRAIN for 1M iterations with a Simulink Coder executable that runs in 0.5s per iteration instead of 1.5s per iteration, your total training time will decrease by 277 hours!
 Second, Simulink Coder executables are much easier to connect to the Bonsai platform in parallel because they require a lot less memory and CPU than instances of interactive Simulink models. Continuing the example above, if you run 100 copies your new coder executable in parallel training you've now reduced the training time by an additional 250 hours.
 Finally, Simulink Coder executable models can be easily shared with people and teams and used to train Bonsai BRAINS without a Matlab or Simulink license.
 
@@ -48,6 +47,10 @@ More information in Matlab and Simulink Coder: https://www.mathworks.com/product
 ## How to connect your own model
 
 Please review the HOWTO file for additional information on how to connect your own Simulink model to the Bonsai AI platform.
+
+## Coordinator
+
+We've implemented a simple pyhton application that controls the interactions between the Bonsai SDK and the Simulunk simulation environment. It's based on the Bonsai SDK and should not be modified. 
 
 ## Virtual Environments (optional)
 

@@ -50,7 +50,7 @@ Please review the HOWTO file for additional information on how to connect your o
 
 ## Coordinator
 
-We've implemented a simple pyhton application that controls the interactions between the Bonsai SDK and the Simulunk simulation environment. It's based on the Bonsai SDK and should not be modified. 
+We've implemented a pyhton application that controls the interactions between the Bonsai SDK and the Simulunk simulation environment. It's based on the Bonsai SDK and should not be modified. 
 
 ## Virtual Environments (optional)
 
